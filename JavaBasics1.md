@@ -292,4 +292,15 @@ public class Main {
     }
 }
 ```
+### Question 6:Comments
 
+### Which of the following is not a correct way of commenting?
+
+### Pick ONE option
+- /* Here is a comment **** */
+- /* This is also a comment /* More comments */*/
+- /* This is also a comment // More comments */
+- ///* This is a // // comment */
+
+### Answer
+- /* This is also a comment /* More comments */*/
