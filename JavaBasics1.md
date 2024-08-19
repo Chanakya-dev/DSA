@@ -89,31 +89,31 @@ public class Solution {
 }
 ```
 ### Explanation
-##Splitting and Expanding Words:
+## Splitting and Expanding Words:
 
-The input string encryptedMessage is split into individual words.
-Each word is processed in the expandWord method to expand sequences like a3 to aaa.
+- The input string encryptedMessage is split into individual words.
+- Each word is processed in the expandWord method to expand sequences like a3 to aaa.
 
 ## Expanding Characters:
 
--The expandWord method goes through each character in the word.
+- The expandWord method goes through each character in the word.
 
--If a digit is found, it repeats the previous character the specified number of times.
+- If a digit is found, it repeats the previous character the specified number of times.
 
--This handles the compression format like a3 or hel2o.
+- This handles the compression format like a3 or hel2o.
 
 ## Reversing Words:
 
--After expanding each word, the list of expanded words is reversed to restore the original order of the sentence.
+- After expanding each word, the list of expanded words is reversed to restore the original order of the sentence.
 
 ## Joining and Returning:
 
--The reversed list of expanded words is then joined back into a single string with spaces between words.
+- The reversed list of expanded words is then joined back into a single string with spaces between words.
 
 Example Test Cases
--Input: seaside the to sent be to ne2ds army ten of team a
+- Input: seaside the to sent be to ne2ds army ten of team a
 
--Output: a team of ten army needs to be sent to the seaside
+- Output: a team of ten army needs to be sent to the seaside
  
  - Input: a3b4q2i abcd2 abc
 
