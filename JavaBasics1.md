@@ -120,7 +120,7 @@ Example Test Cases
  - Output: abc abcdd aaabbbbqqi
 
 ## MCQ
-## Question 3:Static-Analysis
+## Question 2:Static-Analysis
 What is the output of the following Java code?
 ```java
 public class Test (
@@ -140,3 +140,28 @@ System.out.println(j);
 - Compilation fails with an error at line 3
 ### Explanation
 - Variables Can't Start With Integers or Numbers
+
+Question 3:Print a Sum
+--What is the output of the following code?
+```java
+1. public class A {
+2. int add(int i, int j){
+3. return i+j;
+4.
+5. }
+6. public class B extends A[
+7. public static void main(String argv[]) {
+8. short s 9;
+9. System.out.println(add(s,6));
+10.
+11.}
+```
+### Pick ONE option
+- Compilation fails due to an error on line 2
+- Compilation fails due to error an on line 9, non-static method referenced from a static context.
+- Compilation fails due to a type mismatch on line 9.
+- 15
+### Answer
+- Compilation fails due to error on line 9, non-static method referenced from a static context.
+### Explanation
+- Cannot Make staic reference to non-static function
