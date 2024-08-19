@@ -22,5 +22,6 @@ Input Format For Custom Testing
 
 Sample Input
 - seaside the to sent be to ne2ds army ten of team a
+
 Sample Output
 - a team of ten army needs to be sent to the seaside
