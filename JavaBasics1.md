@@ -130,13 +130,13 @@ int j = 07:
 System.out.println(i);
 System.out.println(j);
 ```
-# Pick ONE option
+### Pick ONE option
 - 8 7
 - 10 7
 - Compilation fails with an error at line 3
 - Compilation fails with an error at line 5
 
-# Answer
+### Answer
 - Compilation fails with an error at line 3
-# Explanation
+### Explanation
 - Variables Can't Start With Integers or Numbers
