@@ -118,3 +118,25 @@ Example Test Cases
  - Input: a3b4q2i abcd2 abc
 
  - Output: abc abcdd aaabbbbqqi
+
+## MCQ
+## Question 3:Static-Analysis
+What is the output of the following Java code?
+```java
+public class Test (
+public static void main(String[] args) {
+int 1010;
+int j = 07:
+System.out.println(i);
+System.out.println(j);
+```
+# Pick ONE option
+- 8 7
+- 10 7
+- Compilation fails with an error at line 3
+- Compilation fails with an error at line 5
+
+# Answer
+- Compilation fails with an error at line 3
+# Explanation
+- Variables Can't Start With Integers or Numbers
