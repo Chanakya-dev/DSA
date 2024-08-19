@@ -141,20 +141,20 @@ System.out.println(j);
 ### Explanation
 - Variables Can't Start With Integers or Numbers
 
-Question 3:Print a Sum
---What is the output of the following code?
+###Question 3:Print a Sum
+- What is the output of the following code?
 ```java
-1. public class A {
-2. int add(int i, int j){
-3. return i+j;
-4.
-5. }
-6. public class B extends A[
-7. public static void main(String argv[]) {
-8. short s 9;
-9. System.out.println(add(s,6));
-10.
-11.}
+public class A {
+ int add(int i, int j){
+ return i+j;
+}
+ }
+  class Main extends A{
+ public static void main(String args[]) {
+ short s=9;
+ System.out.println(add(s,6));
+}
+}
 ```
 ### Pick ONE option
 - Compilation fails due to an error on line 2
@@ -165,3 +165,4 @@ Question 3:Print a Sum
 - Compilation fails due to error on line 9, non-static method referenced from a static context.
 ### Explanation
 - Cannot Make staic reference to non-static function
+
