@@ -119,8 +119,98 @@ Example Test Cases
 
  - Output: abc abcdd aaabbbbqqi
 
+## Question 2: Type Counter
+
+Implement a function `typeCounter` that identifies and counts different data types in a given input string.
+
+### Function Signature:
+```java
+public static void typeCounter(String sentence)
+```
+
+### Requirements:
+1. Identify substrings separated by spaces and categorize them as String, Integer, or Double.
+2. Print the count of each type on separate lines in the order: string, integer, double.
+3. There should be a single space between the type name and its count.
+4. If a type doesn't appear, it should still be reported with a count of 0.
+
+### Constraints:
+- The input sentence is ≤ 3000 characters long
+- It contains fewer than 1000 words
+- String substrings consist of lowercase English letters only
+- Numeric substrings contain digits from 0 to 9 and possibly a decimal point
+
+### Sample Input/Output:
+Input: `give me 10 dollars`
+Output:
+```
+string 3
+integer 1
+double 0
+```
+### Solution:
+
+```java
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void typeCounter(String sentence) {
+        String[] words = sentence.split(" ");
+        int stringCount = 0, integerCount = 0, doubleCount = 0;
+        
+        for (String word : words) {
+            if (isInteger(word)) {
+                integerCount++;
+            } else if (isDouble(word)) {
+                doubleCount++;
+            } else if (isString(word)) {
+                stringCount++;
+            }
+        }
+        
+        System.out.println("string " + stringCount);
+        System.out.println("integer " + integerCount);
+        System.out.println("double " + doubleCount);
+    }
+    
+    private static boolean isInteger(String s) {
+        try {
+            Integer.parseInt(s);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+    
+    private static boolean isDouble(String s) {
+        try {
+            Double.parseDouble(s);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
+    }
+    
+    private static boolean isString(String s) {
+        return s.matches("[a-z]+");
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String s = in.nextLine();
+        typeCounter(s);
+    }
+}
+```
+
+
 ## MCQ
-## Question 2:Static-Analysis
+## Question 3:Static-Analysis
 What is the output of the following Java code?
 ```java
 public class Test (
@@ -202,3 +292,4 @@ public class Main {
     }
 }
 ```
+
