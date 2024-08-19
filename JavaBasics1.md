@@ -231,7 +231,7 @@ System.out.println(j);
 ### Explanation
 - Variables Can't Start With Integers or Numbers
 
-### Question 3:Print a Sum
+### Question 4:Print a Sum
 - What is the output of the following code?
 ```java
 public class A {
@@ -256,7 +256,7 @@ public class A {
 ### Explanation
 - Cannot Make staic reference to non-static function
 
-### Question 4: Return Type
+### Question 5: Return Type
 ### What is a covariant return type?
 ### Pick ONE option
 - The overriding method can have derived type as the return type instead of the base type
