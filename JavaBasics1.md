@@ -97,7 +97,9 @@ Each word is processed in the expandWord method to expand sequences like a3 to a
 ## Expanding Characters:
 
 -The expandWord method goes through each character in the word.
+
 -If a digit is found, it repeats the previous character the specified number of times.
+
 -This handles the compression format like a3 or hel2o.
 
 ## Reversing Words:
@@ -112,5 +114,7 @@ Example Test Cases
 -Input: seaside the to sent be to ne2ds army ten of team a
 
 -Output: a team of ten army needs to be sent to the seaside
+ 
  - Input: a3b4q2i abcd2 abc
+
  - Output: abc abcdd aaabbbbqqi
