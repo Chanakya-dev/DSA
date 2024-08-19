@@ -26,7 +26,7 @@ Sample Input
 Sample Output
 - a team of ten army needs to be sent to the seaside
 
-###Sollution
+### Sollution
 
 ```java
 import java.io.*;
@@ -94,17 +94,17 @@ public class Solution {
 The input string encryptedMessage is split into individual words.
 Each word is processed in the expandWord method to expand sequences like a3 to aaa.
 
-##Expanding Characters:
+## Expanding Characters:
 
 -The expandWord method goes through each character in the word.
 -If a digit is found, it repeats the previous character the specified number of times.
 -This handles the compression format like a3 or hel2o.
 
-##Reversing Words:
+## Reversing Words:
 
 -After expanding each word, the list of expanded words is reversed to restore the original order of the sentence.
 
-##Joining and Returning:
+## Joining and Returning:
 
 -The reversed list of expanded words is then joined back into a single string with spaces between words.
 
@@ -113,5 +113,4 @@ Example Test Cases
 
 -Output: a team of ten army needs to be sent to the seaside
  - Input: a3b4q2i abcd2 abc
-
  - Output: abc abcdd aaabbbbqqi
