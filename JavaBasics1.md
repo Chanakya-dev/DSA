@@ -141,7 +141,7 @@ System.out.println(j);
 ### Explanation
 - Variables Can't Start With Integers or Numbers
 
-###Question 3:Print a Sum
+### Question 3:Print a Sum
 - What is the output of the following code?
 ```java
 public class A {
@@ -166,3 +166,39 @@ public class A {
 ### Explanation
 - Cannot Make staic reference to non-static function
 
+### Question 4: Return Type
+### What is a covariant return type?
+### Pick ONE option
+- The overriding method can have derived type as the return type instead of the base type
+- The overriding method can have base type as the return type instead of the derived type
+- The return type is of the class type Covariant
+- The return type is void
+### Answer
+- The overriding method can have derived type as the return type instead of the base type
+### Explanation
+- Since the Overriding class is the child class it may contains both parent class or child class name as return type
+### Example 
+
+```java
+class Animal {
+    Animal makeSound() {
+        System.out.println("Animal sound");
+        return new Animal();
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    Dog makeSound() { // Covariant return type
+        System.out.println("Bark");
+        return new Dog();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        myDog.makeSound(); 
+    }
+}
+```
