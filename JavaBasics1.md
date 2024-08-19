@@ -20,11 +20,11 @@ Function Description
 
 Input Format For Custom Testing
 
-###Sample Case 0
+##Sample Case 0
 Sample Input For Custom Testing
 seaside the to sent be to ne2ds army ten of team a
 Sample Output
 a team of ten army needs to be sent to the seaside
-###▼ Sample Case 1
+##▼ Sample Case 1
 Sample Input For Custom Testing
 a3b4q2i abcd2 abc
